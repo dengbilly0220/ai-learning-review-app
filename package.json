@@ -1,0 +1,23 @@
+{
+  "name": "gongkao-review-assistant",
+  "private": true,
+  "version": "15.6.7",
+  "description": "HBuilderX uni-app project for offline public-service-exam review",
+  "scripts": {
+    "dev:app": "uni -p app",
+    "build:app": "uni build -p app",
+    "check:structure": "node tests/structure-check.mjs && node tests/essay-reasoning-check.mjs"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "^3.0.0-4061220260825001",
+    "@dcloudio/uni-app-plus": "^3.0.0-4061220260825001",
+    "@dcloudio/vite-plugin-uni": "^3.0.0-4061220260825001",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^3.4.31",
+    "@dcloudio/uni-automator": "^3.0.0-4061220260825001",
+    "typescript": "^5.9.2",
+    "vite": "^6.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+# Private configuration
+.env
+.env.*
+!.env.example
+
+# User data and generated files
+*.db
+*.sqlite
+*.sqlite3
+*.zip
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/images/*
+!backend/images/.gitkeep
+
+# Build and local tooling
+node_modules/
+unpackage/
+dist/
+.DS_Store

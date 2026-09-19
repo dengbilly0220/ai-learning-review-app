@@ -1,0 +1,62 @@
+{
+  "name": "AI 学习复盘助手",
+  "appid": "__UNI__PUBLIC_DEMO_DEMO",
+  "description": "本地优先的学习训练、错题复盘与 AI 分阶段反馈应用示例",
+  "versionName": "15.6.7",
+  "versionCode": "150607",
+  "vueVersion": "3",
+  "transformPx": false,
+  "app-plus": {
+    "darkmode": true,
+    "themeLocation": "theme.json",
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-app",
+    "compilerVersion": 3,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true
+    },
+    "modules": {
+      "SQLite": {},
+      "Camera": {},
+      "Zip": {},
+      "Share": {}
+    },
+    "distribute": {
+      "icons": {
+        "android": {
+          "hdpi": "static/branding/icon-72.png",
+          "xhdpi": "static/branding/icon-96.png",
+          "xxhdpi": "static/branding/icon-144.png",
+          "xxxhdpi": "static/branding/icon-192.png"
+        }
+      },
+      "splashscreen": {
+        "androidStyle": "default",
+        "android": {
+          "hdpi": "static/branding/splash-480.png",
+          "xhdpi": "static/branding/splash-720.png",
+          "xxhdpi": "static/branding/splash-1080.png"
+        },
+        "androidNavigationBarColor": "#D6EAFC"
+      },
+      "android": {
+        "minSdkVersion": 26,
+        "targetSdkVersion": 35,
+        "abiFilters": [
+          "arm64-v8a",
+          "armeabi-v7a"
+        ],
+        "permissions": [
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+          "<uses-permission android:name=\"android.permission.READ_MEDIA_IMAGES\"/>",
+          "<uses-permission android:name=\"android.permission.POST_NOTIFICATIONS\"/>",
+          "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>"
+        ]
+      }
+    }
+  }
+}

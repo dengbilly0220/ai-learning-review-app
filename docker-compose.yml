@@ -1,0 +1,42 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: gongkao-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-gongkao_app}
+      POSTGRES_USER: ${POSTGRES_USER:-gongkao}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?请在 .env 中设置 POSTGRES_PASSWORD}
+    volumes:
+      - ${NAS_DATA_ROOT:-/Docker/gongkao-app}/postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks: [gongkao-net]
+
+  api:
+    build: .
+    container_name: gongkao-api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-gongkao}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-gongkao_app}
+      UPLOAD_DIR: /app/uploads/wrong
+      SILICONFLOW_API_KEY: ${SILICONFLOW_API_KEY:?请在 .env 中设置 SILICONFLOW_API_KEY}
+      SILICONFLOW_BASE_URL: ${SILICONFLOW_BASE_URL:-https://api.siliconflow.cn/v1}
+      SILICONFLOW_MODEL: ${SILICONFLOW_MODEL:-deepseek-ai/DeepSeek-V4-Flash}
+      AI_REQUEST_TIMEOUT_SECONDS: ${AI_REQUEST_TIMEOUT_SECONDS:-120}
+    volumes:
+      - ${NAS_DATA_ROOT:-/Docker/gongkao-app}/uploads/wrong:/app/uploads/wrong
+      - ${NAS_DATA_ROOT:-/Docker/gongkao-app}/images:/app/images
+    ports:
+      - "8000:8000"
+    networks: [gongkao-net]
+
+networks:
+  gongkao-net:
+    driver: bridge

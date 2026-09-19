@@ -1,0 +1,268 @@
+{
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/training/index",
+      "style": {
+        "navigationBarTitleText": "训练"
+      }
+    },
+    {
+      "path": "pages/review/index",
+      "style": {
+        "navigationBarTitleText": "复盘"
+      }
+    },
+    {
+      "path": "pages/review/action-instructions",
+      "style": {
+        "navigationBarTitleText": "行动指令库"
+      }
+    },
+    {
+      "path": "pages/statistics/index",
+      "style": {
+        "navigationBarTitleText": "统计"
+      }
+    },
+    {
+      "path": "pages/profile/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/formula-library/index",
+      "style": {
+        "navigationBarTitleText": "资料分析公式库"
+      }
+    },
+    {
+      "path": "pages/formula-hub/index",
+      "style": {
+        "navigationBarTitleText": "数据库"
+      }
+    },
+    {
+      "path": "pages/word-meaning/index",
+      "style": {
+        "navigationBarTitleText": "词义"
+      }
+    },
+    {
+      "path": "pages/word-meaning/edit",
+      "style": {
+        "navigationBarTitleText": "编辑词义"
+      }
+    },
+    {
+      "path": "pages/word-meaning/import",
+      "style": {
+        "navigationBarTitleText": "导入词义模板"
+      }
+    },
+    {
+      "path": "pages/formula-detail/index",
+      "style": {
+        "navigationBarTitleText": "公式详情"
+      }
+    },
+    {
+      "path": "pages/formula-library/create",
+      "style": {
+        "navigationBarTitleText": "新增资料分析公式"
+      }
+    },
+    {
+      "path": "pages/quantity-formula-library/index",
+      "style": {
+        "navigationBarTitleText": "数量关系公式库"
+      }
+    },
+    {
+      "path": "pages/training/timer",
+      "style": {
+        "navigationBarTitleText": "训练计时器"
+      }
+    },
+    {
+      "path": "pages/quantity-formula-library/create",
+      "style": {
+        "navigationBarTitleText": "新增数量关系公式"
+      }
+    },
+    {
+      "path": "pages/formula-edit/index",
+      "style": {
+        "navigationBarTitleText": "修改公式"
+      }
+    },
+    {
+      "path": "pages/training/create",
+      "style": {
+        "navigationBarTitleText": "新增训练记录"
+      }
+    },
+    {
+      "path": "pages/training/history",
+      "style": {
+        "navigationBarTitleText": "训练历史"
+      }
+    },
+    {
+      "path": "pages/mistake/quick-create",
+      "style": {
+        "navigationBarTitleText": "快速收录错题"
+      }
+    },
+    {
+      "path": "pages/mistake/detail",
+      "style": {
+        "navigationBarTitleText": "错题详情"
+      }
+    },
+    {
+      "path": "pages/mistake/edit",
+      "style": {
+        "navigationBarTitleText": "编辑错题"
+      }
+    },
+    {
+      "path": "pages/mistake/review",
+      "style": {
+        "navigationBarTitleText": "完整复盘"
+      }
+    },
+    {
+      "path": "pages/mistake/library",
+      "style": {
+        "navigationBarTitleText": "错题库"
+      }
+    },
+    {
+      "path": "pages/review/retry" },
+    {
+      "path": "pages/review/blind",
+      "style": {
+        "navigationBarTitleText": "今日再上交"
+      }
+    },
+    {
+      "path": "pages/memory/index",
+      "style": {
+        "navigationBarTitleText": "今日速算记忆"
+      }
+    },
+    {
+      "path": "pages/memory/practice",
+      "style": {
+        "navigationBarTitleText": "速算训练"
+      }
+    },
+    {
+      "path": "pages/percentage-library/index",
+      "style": {
+        "navigationBarTitleText": "百化分"
+      }
+    },
+    {
+      "path": "pages/percentage-library/edit",
+      "style": {
+        "navigationBarTitleText": "编辑百化分"
+      }
+    },
+    {
+      "path": "pages/essay/index",
+      "style": {
+        "navigationBarTitleText": "申论训练"
+      }
+    },
+    {
+      "path": "pages/essay/reasoning-practice",
+      "style": {
+        "navigationBarTitleText": "申论破题训练"
+      }
+    },
+    {
+      "path": "pages/essay/work-brief",
+      "style": {
+        "navigationBarTitleText": "工作简报训练"
+      }
+    },
+    {
+      "path": "pages/essay/official-templates",
+      "style": {
+        "navigationBarTitleText": "公文题模板库"
+      }
+    },
+    {
+      "path": "pages/essay/official-template-edit",
+      "style": {
+        "navigationBarTitleText": "编辑公文模板"
+      }
+    },
+    {
+      "path": "pages/essay/templates",
+      "style": {
+        "navigationBarTitleText": "大作文模板库"
+      }
+    },
+    {
+      "path": "pages/settings/index",
+      "style": {
+        "navigationBarTitleText": "设置"
+      }
+    },
+    {
+      "path": "pages/backup/index",
+      "style": {
+        "navigationBarTitleText": "数据备份与恢复"
+      }
+    },
+    {
+      "path": "pages/admin-sync/index",
+      "style": {
+        "navigationBarTitleText": "管理员同步设置"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "@navTextStyle",
+    "navigationBarTitleText": "公考复盘助手",
+    "navigationBarBackgroundColor": "@navBackgroundColor",
+    "backgroundColor": "@pageBackgroundColor"
+  },
+  "tabBar": {
+    "color": "@tabColor",
+    "selectedColor": "@tabSelectedColor",
+    "backgroundColor": "@tabBackgroundColor",
+    "borderStyle": "@tabBorderStyle",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/training/index",
+        "text": "训练"
+      },
+      {
+        "pagePath": "pages/review/index",
+        "text": "复盘"
+      },
+      {
+        "pagePath": "pages/statistics/index",
+        "text": "统计"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的"
+      }
+    ]
+  }
+}
